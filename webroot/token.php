@@ -1,6 +1,6 @@
 <?php
 include('/webroot/Twilio/autoload.php');
-include('./randos.php');
+include('/webroot/randos.php');
 
 
 use Twilio\Jwt\AccessToken;
