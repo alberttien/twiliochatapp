@@ -46,7 +46,7 @@ $(function() {
     var token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzgyYTVmMjRkNTJlYTM3NWI5NGNkMzJlYmJlMGY1NzViLTE1MzU3MzAyNzUiLCJpc3MiOiJTSzgyYTVmMjRkNTJlYTM3NWI5NGNkMzJlYmJlMGY1NzViIiwic3ViIjoiQUMzY2ZlZTIxMzJiODAyNmFiMjhjNDQ3MWFjM2VjMTE1YSIsImV4cCI6MTUzNTczMzg3NSwiZ3JhbnRzIjp7ImlkZW50aXR5Ijoiam9obl9kb2UiLCJjaGF0Ijp7InNlcnZpY2Vfc2lkIjoiSVMxMTU2NzdkNWUzZGI0YTE0ODJkYzYzMzdlYmQwNWNlOSJ9fX0.Pr9bErMQKbKa2tFeReRe7V2LF4LW-ZT1w2IJBJV38nU";
     
     var chatClient = Twilio.Chat.Client.create(token).then(client => {
-        alert('test');
+        alert(client);
     });
     
 //    chatClient = Twilio.Chat.Client.create(token);
