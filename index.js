@@ -60,7 +60,7 @@ $(function() {
     //console.log( "error" )});
 
     var token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzgyYTVmMjRkNTJlYTM3NWI5NGNkMzJlYmJlMGY1NzViLTE1MzU3MjY5NTIiLCJpc3MiOiJTSzgyYTVmMjRkNTJlYTM3NWI5NGNkMzJlYmJlMGY1NzViIiwic3ViIjoiQUMzY2ZlZTIxMzJiODAyNmFiMjhjNDQ3MWFjM2VjMTE1YSIsImV4cCI6MTUzNTczMDU1MiwiZ3JhbnRzIjp7ImlkZW50aXR5Ijoiam9obl9kb2UiLCJjaGF0Ijp7InNlcnZpY2Vfc2lkIjoiSVMxMTU2NzdkNWUzZGI0YTE0ODJkYzYzMzdlYmQwNWNlOSJ9fX0.eq_D0UjtwsL6b0BsID2aPn3BUQaRacI1YKZgS_f2lHI";
-	chatClient = new Twilio.Chat.Client.create(token);
+    chatClient = new Twilio.Chat.Client.create(token);
     chatClient.getSubscribedChannels().then(createOrJoinGeneralChannel); 
     
     function createOrJoinGeneralChannel() {
