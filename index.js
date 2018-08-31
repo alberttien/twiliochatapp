@@ -1,9 +1,7 @@
 $(function() {
     // Get handle to the chat div 
     var $chatWindow = $('#messages');
-    
-    alert($chatWindow);
-
+ 
     // Our interface to the Chat service
     var chatClient;
 
@@ -58,7 +56,8 @@ $(function() {
         // Initialize the Chat client
         chatClient = new Twilio.Chat.Client(data.token);
         chatClient.getSubscribedChannels().then(createOrJoinGeneralChannel);        
-    });
+    }).fail(function() {
+    console.log( "error" )});
 
     function createOrJoinGeneralChannel() {
         // Get the general chat channel, which is where all the messages are
