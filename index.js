@@ -1,6 +1,8 @@
 $(function() {
     // Get handle to the chat div 
     var $chatWindow = $('#messages');
+    
+    alert($chatWindow);
 
     // Our interface to the Chat service
     var chatClient;
