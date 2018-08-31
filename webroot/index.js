@@ -43,7 +43,9 @@ $(function() {
     // Get an access token for the current user, passing a username (identity)
     // and a device ID - for browser-based apps, we'll always just use the 
     // value "browser"
-    $.getJSON('/webroot/token.php', {
+    alert('test');
+    
+    $.getJSON('https://twilioaccesstoken.herokuapp.com/createChatAccessToken.php', {
         device: 'browser'
     }, function(data) {
         // Alert the user they have been assigned a random username
