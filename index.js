@@ -45,10 +45,11 @@ $(function() {
     // value "browser"
     alert('test');
     
-    $.getJSON('https://twilioaccesstoken.herokuapp.com/createChatAccessToken.php', {
+    $.getJSON('createChatAccessToken.php', {
         device: 'browser'
     }, function(data) {
         // Alert the user they have been assigned a random username
+        alert(data);
         username = data.identity;
         print('You have been assigned a random username of: ' 
             + '<span class="me">' + username + '</span>', true);
