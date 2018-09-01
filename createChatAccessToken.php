@@ -30,6 +30,9 @@ $chatGrant->setServiceSid($serviceSid);
 // Add grant to token
 $token->addGrant($chatGrant);
 
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+
 // render token to string
 echo $token->toJWT();
 
