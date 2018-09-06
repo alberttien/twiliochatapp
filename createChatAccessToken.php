@@ -12,7 +12,7 @@ $twilioApiSecret = 'CvZK0lOALDeyU3PkxTu2nvOESDXqcUee';
 // Required for Chat grant
 $serviceSid = 'IS115677d5e3db4a1482dc6337ebd05ce9';
 // choose a random username for the connecting user
-$identity = "john_doe";
+$identity = "+19175399700";
 
 // Create access token, which we will serialize and send to the client
 $token = new AccessToken(
