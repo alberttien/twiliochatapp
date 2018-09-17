@@ -20,7 +20,7 @@ $token = new AccessToken(
     $twilioAccountSid,
     $twilioApiKey,
     $twilioApiSecret,
-    604799,
+    600000,
     $identity
 );
 
